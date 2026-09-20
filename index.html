@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Inventários segmentais e proximidade fonológica em línguas Bantu
+    </title>
+
+    <meta name="description"
+          content="Material suplementar e visualizações interativas de um estudo comparativo de 15 línguas Bantu.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     NAVEGAÇÃO
+========================================================= -->
+
+<nav class="navbar">
+
+    <div class="nav-title">
+        Línguas Bantu
+    </div>
+
+    <div class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#linguas">Línguas</a>
+        <a href="#inventarios">Inventários</a>
+        <a href="#tracos">Traços</a>
+        <a href="#proximidade">Proximidade</a>
+        <a href="#visualizacao">3D</a>
+        <a href="#metodos">Métodos</a>
+        <a href="#referencias">Referências</a>
+    </div>
+
+</nav>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <p class="eyebrow">
+            MATERIAL SUPLEMENTAR · 2026
+        </p>
+
+        <h1>
+            Inventários segmentais, traços distintivos
+            e proximidade fonológica em línguas Bantu
+        </h1>
+
+        <p class="hero-subtitle">
+            Uma análise comparativa de 15 línguas distribuídas
+            em três conjuntos linguísticos.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#visualizacao" class="button primary">
+                Explorar visualização 3D
+            </a>
+
+            <a href="#metodos" class="button secondary">
+                Conhecer os métodos
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     SOBRE
+========================================================= -->
+
+<section id="sobre" class="section">
+
+    <div class="section-header">
+
+        <span class="section-number">01</span>
+
+        <div>
+            <p class="section-label">O estudo</p>
+
+            <h2>
+                Sobre a pesquisa
+            </h2>
+        </div>
+
+    </div>
+
+
+    <div class="two-columns">
+
+        <div>
+
+            <h3>
+                Pergunta de pesquisa
+            </h3>
+
+            <p>
+                Em que medida a proximidade entre as línguas pode ser
+                observada na composição de seus inventários segmentais
+                e na distribuição de seus traços distintivos?
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="stat">
+                <strong>15</strong>
+                <span>línguas</span>
+            </div>
+
+            <div class="stat">
+                <strong>3</strong>
+                <span>conjuntos</span>
+            </div>
+
+            <div class="stat">
+                <strong>10+</strong>
+                <span>medidas e variáveis</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     LÍNGUAS
+========================================================= -->
+
+<section id="linguas" class="section light">
+
+    <div class="section-header">
+
+        <span class="section-number">02</span>
+
+        <div>
+
+            <p class="section-label">
+                Amostra
+            </p>
+
+            <h2>
+                As 15 línguas
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="language-groups">
+
+
+        <!-- GRUPO S -->
+
+        <div class="language-card">
+
+            <span class="group-tag">
+                GRUPO S
+            </span>
+
+            <h3>
+                África Austral
+            </h3>
+
+            <div class="languages">
+
+                <button onclick="showLanguage('Tsonga')">
+                    Tsonga
+                </button>
+
+                <button onclick="showLanguage('Ronga')">
+                    Ronga
+                </button>
+
+                <button onclick="showLanguage('Tswa')">
+                    Tswa
+                </button>
+
+                <button onclick="showLanguage('Xhosa')">
+                    Xhosa
+                </button>
+
+                <button onclick="showLanguage('Copi')">
+                    Copi
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- GRUPO E -->
+
+        <div class="language-card">
+
+            <span class="group-tag">
+                GRUPO E
+            </span>
+
+            <h3>
+                África Oriental
+            </h3>
+
+            <div class="languages">
+
+                <button onclick="showLanguage('Mochi')">
+                    Mochi
+                </button>
+
+                <button onclick="showLanguage('Meru')">
+                    Meru
+                </button>
+
+                <button onclick="showLanguage('Kauma')">
+                    Kauma
+                </button>
+
+                <button onclick="showLanguage('Kambe')">
+                    Kambe
+                </button>
+
+                <button onclick="showLanguage('Giryama')">
+                    Giryama
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- GRASS -->
+
+        <div class="language-card">
+
+            <span class="group-tag">
+                GRASS
+            </span>
+
+            <h3>
+                Grassfields
+            </h3>
+
+            <div class="languages">
+
+                <button onclick="showLanguage('Yemba')">
+                    Yemba
+                </button>
+
+                <button onclick="showLanguage('Tikar')">
+                    Tikar
+                </button>
+
+                <button onclick="showLanguage('Ngomba')">
+                    Ngomba
+                </button>
+
+                <button onclick="showLanguage('Ndemli')">
+                    Ndemli
+                </button>
+
+                <button onclick="showLanguage('Ngiemboon')">
+                    Ngiemboon
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PAINEL DA LÍNGUA -->
+
+    <div id="language-panel" class="language-panel">
+
+        <p>
+            Selecione uma língua para visualizar suas informações.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     INVENTÁRIOS
+========================================================= -->
+
+<section id="inventarios" class="section">
+
+    <div class="section-header">
+
+        <span class="section-number">03</span>
+
+        <div>
+
+            <p class="section-label">
+                Segmentos
+            </p>
+
+            <h2>
+                Inventários segmentais
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <p class="section-introduction">
+
+        Explore a distribuição dos segmentos entre as línguas
+        selecionadas.
+
+    </p>
+
+
+    <div class="controls">
+
+        <button class="filter active"
+                onclick="filterGroup('todos')">
+            Todas
+        </button>
+
+        <button class="filter"
+                onclick="filterGroup('S')">
+            Grupo S
+        </button>
+
+        <button class="filter"
+                onclick="filterGroup('E')">
+            Grupo E
+        </button>
+
+        <button class="filter"
+                onclick="filterGroup('Grass')">
+            Grupo Grass
+        </button>
+
+    </div>
+
+
+    <div class="visual-placeholder">
+
+        <h3>
+            Matriz de inventários
+        </h3>
+
+        <p>
+            Aqui será inserida a matriz interativa de presença
+            e ausência dos segmentos.
+        </p>
+
+        <button class="button primary"
+                onclick="loadInventory()">
+
+            Carregar dados
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     TRAÇOS
+========================================================= -->
+
+<section id="tracos" class="section light">
+
+    <div class="section-header">
+
+        <span class="section-number">04</span>
+
+        <div>
+
+            <p class="section-label">
+                Fonologia
+            </p>
+
+            <h2>
+                Traços distintivos
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <p class="section-introduction">
+
+        Compare a distribuição dos traços distintivos entre as
+        línguas analisadas.
+
+    </p>
+
+
+    <div class="feature-selector">
+
+        <label for="feature">
+            Traço:
+        </label>
+
+        <select id="feature"
+                onchange="changeFeature()">
+
+            <option value="continuant">
+                continuant
+            </option>
+
+            <option value="nasal">
+                nasal
+            </option>
+
+            <option value="lateral">
+                lateral
+            </option>
+
+            <option value="coronal">
+                coronal
+            </option>
+
+            <option value="dorsal">
+                dorsal
+            </option>
+
+            <option value="high">
+                high
+            </option>
+
+            <option value="low">
+                low
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div id="feature-chart"
+         class="visual-placeholder">
+
+        <h3>
+            Distribuição do traço
+        </h3>
+
+        <p>
+            O gráfico será atualizado conforme o traço selecionado.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROXIMIDADE
+========================================================= -->
+
+<section id="proximidade" class="section">
+
+    <div class="section-header">
+
+        <span class="section-number">05</span>
+
+        <div>
+
+            <p class="section-label">
+                Comparação
+            </p>
+
+            <h2>
+                Proximidade fonológica
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="measure-buttons">
+
+        <button class="measure active"
+                onclick="changeMeasure('jaccard')">
+
+            Similaridade de Jaccard
+
+        </button>
+
+        <button class="measure"
+                onclick="changeMeasure('features')">
+
+            Distância de traços
+
+        </button>
+
+        <button class="measure"
+                onclick="changeMeasure('inventory')">
+
+            Similaridade de inventário
+
+        </button>
+
+    </div>
+
+
+    <div class="heatmap-container">
+
+        <h3 id="measure-title">
+            Similaridade de Jaccard
+        </h3>
+
+        <div id="heatmap">
+
+            <p>
+                A matriz será carregada a partir dos dados.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     DISTÂNCIA GEOGRÁFICA
+========================================================= -->
+
+<section id="geografia" class="section light">
+
+    <div class="section-header">
+
+        <span class="section-number">06</span>
+
+        <div>
+
+            <p class="section-label">
+                Espaço
+            </p>
+
+            <h2>
+                Distância geográfica
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <p class="section-introduction">
+
+        Compare a distância geográfica entre as línguas com
+        suas medidas de proximidade fonológica.
+
+    </p>
+
+
+    <div class="map-placeholder">
+
+        <p>
+            MAPA INTERATIVO
+        </p>
+
+        <span>
+            Aqui será inserido o mapa das línguas.
+        </span>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     VISUALIZAÇÃO 3D
+========================================================= -->
+
+<section id="visualizacao"
+         class="section dark">
+
+    <div class="section-header">
+
+        <span class="section-number">07</span>
+
+        <div>
+
+            <p class="section-label">
+                Exploração interativa
+            </p>
+
+            <h2>
+                Espaço multidimensional
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <p class="section-introduction">
+
+        Explore a relação entre proximidade fonológica,
+        similaridade de inventário e distância geográfica.
+
+    </p>
+
+
+    <div class="three-d-controls">
+
+
+        <div>
+
+            <label>
+                Eixo X
+            </label>
+
+            <select id="axis-x">
+
+                <option>
+                    Distância geográfica
+                </option>
+
+                <option>
+                    Distância fonológica
+                </option>
+
+                <option>
+                    Similaridade de inventário
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div>
+
+            <label>
+                Eixo Y
+            </label>
+
+            <select id="axis-y">
+
+                <option>
+                    Distância fonológica
+                </option>
+
+                <option>
+                    Distância geográfica
+                </option>
+
+                <option>
+                    Similaridade de inventário
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div>
+
+            <label>
+                Eixo Z
+            </label>
+
+            <select id="axis-z">
+
+                <option>
+                    Similaridade de inventário
+                </option>
+
+                <option>
+                    Distância fonológica
+                </option>
+
+                <option>
+                    Distância geográfica
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+
+    <div id="three-d">
+
+        <div class="three-d-message">
+
+            <h3>
+                Visualização 3D
+            </h3>
+
+            <p>
+                O gráfico interativo será carregado aqui.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="animation-controls">
+
+        <button onclick="animateGraph()"
+                class="button primary">
+
+            ▶ Animar transformação
+
+        </button>
+
+        <button onclick="resetGraph()"
+                class="button secondary">
+
+            ↻ Reiniciar
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     INTELIGIBILIDADE
+========================================================= -->
+
+<section id="inteligibilidade"
+         class="section">
+
+    <div class="section-header">
+
+        <span class="section-number">08</span>
+
+        <div>
+
+            <p class="section-label">
+                Relações linguísticas
+            </p>
+
+            <h2>
+                Proximidade fonológica e inteligibilidade
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="important-note">
+
+        <strong>
+            Nota metodológica
+        </strong>
+
+        <p>
+
+            As relações de inteligibilidade apresentadas nesta seção
+            correspondem às informações reportadas nas fontes
+            utilizadas para caracterizar as variedades. Elas não
+            constituem uma medida experimental de inteligibilidade
+            realizada neste estudo.
+
+        </p>
+
+    </div>
+
+
+    <div class="intelligibility-placeholder">
+
+        <p>
+            Tabela e visualização das relações de inteligibilidade.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     MÉTODOS
+========================================================= -->
+
+<section id="metodos"
+         class="section light">
+
+    <div class="section-header">
+
+        <span class="section-number">09</span>
+
+        <div>
+
+            <p class="section-label">
+                Reprodutibilidade
+            </p>
+
+            <h2>
+                Dados e métodos
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="method-grid">
+
+        <div class="method-card">
+
+            <h3>
+                Dados
+            </h3>
+
+            <p>
+                Inventários segmentais, traços distintivos,
+                informações geográficas e relações de
+                inteligibilidade.
+            </p>
+
+        </div>
+
+
+        <div class="method-card">
+
+            <h3>
+                Comparação
+            </h3>
+
+            <p>
+                Comparações par a par entre as línguas
+                selecionadas.
+            </p>
+
+        </div>
+
+
+        <div class="method-card">
+
+            <h3>
+                Medidas
+            </h3>
+
+            <p>
+                Similaridade de inventários, Jaccard,
+                distância de traços e distância geográfica.
+            </p>
+
+        </div>
+
+
+        <div class="method-card">
+
+            <h3>
+                Reprodutibilidade
+            </h3>
+
+            <p>
+                Scripts R e dados processados disponibilizados
+                como material suplementar.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="download-area">
+
+        <a href="dados/inventarios.csv"
+           class="download-button">
+
+            ↓ Dados
+
+        </a>
+
+        <a href="scripts/"
+           class="download-button">
+
+            ↓ Scripts R
+
+        </a>
+
+        <a href="referencias/referencias.bib"
+           class="download-button">
+
+            ↓ BibTeX
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     REFERÊNCIAS
+========================================================= -->
+
+<section id="referencias"
+         class="section">
+
+    <div class="section-header">
+
+        <span class="section-number">10</span>
+
+        <div>
+
+            <p class="section-label">
+                Bibliografia
+            </p>
+
+            <h2>
+                Referências
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="references">
+
+        <p>
+            A bibliografia completa utilizada no estudo está
+            disponível no arquivo BibTeX.
+        </p>
+
+        <a href="referencias/referencias.bib"
+           class="button primary">
+
+            Abrir referências
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     RODAPÉ
+========================================================= -->
+
+<footer>
+
+    <div>
+
+        <strong>
+            Inventários segmentais e proximidade fonológica
+        </strong>
+
+        <p>
+            Material suplementar · 2026
+        </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+        <a href="#">
+            GitHub
+        </a>
+
+        <a href="#">
+            OSF
+        </a>
+
+        <a href="#">
+            Zenodo
+        </a>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
